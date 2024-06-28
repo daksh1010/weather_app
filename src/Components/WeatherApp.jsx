@@ -14,7 +14,7 @@ const WeatherApp = () => {
   useEffect(() => {
     const fetchDefaultWeather = async () => {
       setLoading(true);
-      const defaultLocation = "Tbilisi";
+      const defaultLocation = "Delhi";
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${defaultLocation}&units=Metric&appid=${api_key}`;
       const res = await fetch(url);
       const defaultData = await res.json();
